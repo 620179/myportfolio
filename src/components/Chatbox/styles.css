@@ -1,111 +1,114 @@
 /* Widget Styles */
 #web3forms__widget {
-    position: relative;
-  }
-  
-  #w3f__widget--content {
-    position: fixed;
-    z-index: 50;
-    bottom: 100px;
-    right: 5px;
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-    min-height: 250px;
-    max-height: 600px;
-    background-color: white;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: auto;
-  }
-  
-  #w3f__widget--content .widget-header {
-    padding: 20px;
-    text-align: center;
-    background-color: rgb(68, 95, 125);; /* Indigo color */
-    color: white;
-  }
-  
-  #w3f__widget--content .widget-header h3 {
-    margin: 0;
-    font-size: 18px;
-  }
-  
-  #w3f__widget--content .widget-header p {
-    margin: 5px 0 0;
-    opacity: 0.5;
-  }
-  
-  #w3f__widget--content .widget-body {
-    padding: 20px;
-    background-color: #f9fafb;
-  }
-  
-  #w3f__widget--content .widget-body form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .widget-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-  }
-  
-  .widget-input:focus {
-    border-color: rgb(68, 95, 125);;
-    outline: none;
-    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
-  }
-  
-  .widget-button {
-    width: 100%;
-    padding: 12px;
-    background-color: rgb(68, 95, 125);;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .widget-button:hover {
-    background-color: rgb(68, 95, 125);;
-  }
-  
-  .widget-button:focus {
-    outline: none;
-  }
-  
-  #web3forms__widget button.widget-toggle {
-    position: fixed;
-    z-index: 40;
-    right: 5px;
-    bottom: 5px;
-    width: 56px;
-    height: 56px;
-    background-color: rgb(68, 95, 125);;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.3s;
-  }
-  
-  #web3forms__widget button.widget-toggle:hover {
-    background-color: rgb(68, 95, 125);;
-  }
-  
-  #web3forms__widget button.widget-toggle svg {
-    width: 24px;
-    height: 24px;
-  }
-  
+  position: relative;
+}
+
+#w3f__widget--content {
+  position: fixed;
+  z-index: 50;
+  bottom: 100px;
+  right: 5px;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  min-height: 250px;
+  max-height: 600px;
+  background-color: #ffffff; /* White background for the widget */
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  border-radius: 8px;
+  overflow: auto;
+}
+
+#w3f__widget--content .widget-header {
+  padding: 20px;
+  text-align: center;
+  background-color: #ff6b81; /* Soft pink for header */
+  color: white;
+}
+
+#w3f__widget--content .widget-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif; /* Same modern font */
+}
+
+#w3f__widget--content .widget-header p {
+  margin: 5px 0 0;
+  opacity: 0.7;
+  font-family: 'Open Sans', sans-serif; /* Consistent text font */
+}
+
+#w3f__widget--content .widget-body {
+  padding: 20px;
+  background-color: #f2f2f2; /* Light grey for widget body */
+}
+
+#w3f__widget--content .widget-body form {
+  display: flex;
+  flex-direction: column;
+}
+
+.widget-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.widget-input:focus {
+  border-color: #ff6b81; /* Pink focus border */
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 107, 129, 0.2); /* Pink focus shadow */
+}
+
+.widget-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff6b81; /* Soft pink button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s;
+}
+
+.widget-button:hover {
+  background-color: #ff5b6e; /* Darker pink on hover */
+}
+
+.widget-button:focus {
+  outline: none;
+}
+
+#web3forms__widget button.widget-toggle {
+  position: fixed;
+  z-index: 40;
+  right: 5px;
+  bottom: 5px;
+  width: 56px;
+  height: 56px;
+  background-color: #ff6b81; /* Pink toggle button */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+#web3forms__widget button.widget-toggle:hover {
+  background-color: #ff5b6e; /* Darker pink on hover */
+}
+
+#web3forms__widget button.widget-toggle svg {
+  width: 24px;
+  height: 24px;
+}

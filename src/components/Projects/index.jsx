@@ -5,12 +5,12 @@ const projects = [
   {
     title: 'Project One',
     description: 'This is a brief description of Project One.',
-    link: '#',
+    link: 'https://620179.github.io/photosite/',
   },
   {
     title: 'Project Two',
     description: 'This is a brief description of Project Two.',
-    link: '#',
+    link: 'https://620179.github.io/pricingpanel/',
   },
   {
     title: 'Project Three',

@@ -1,57 +1,60 @@
 /* Form Container Styles - Styles the container holding the registration and login forms */
 .form-container {
-    background-color: #dfdfdf; /* Sets the background color of the form container to white */
+    background-color: #ffffff; /* Sets the background color to white */
     border-radius: 8px; /* Rounds the corners of the form container */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the form container */
-    width: 350px; /* Sets a fixed width for the form container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow for subtle depth */
+    width: 350px; /* Fixed width for the form container */
     padding: 20px; /* Adds padding inside the form container */
-    margin: 20px auto; /* Centers the form container horizontally on the page */
+    margin: 20px auto; /* Centers the form container horizontally */
     z-index: 1; /* Ensures the form container appears above other content */
-    position: relative; /* Allows for positioning of child elements or pseudo-elements */
+    position: relative; /* Allows for positioning of child elements */
 }
 
 /* Form Title Styles - Applies to the title of the form (h1 within the form container) */
 .form-title {
     text-align: center; /* Centers the title text */
-    color: #6a5d19; /* Sets the title text color to dark grey */
+    color: #ff6b81; /* Soft pink for the title text */
     font-size: 24px; /* Sets the font size of the title */
     margin-bottom: 20px; /* Adds margin below the title */
+    font-family: 'Poppins', sans-serif; /* Consistent font style */
 }
 
 /* Form Label Styles - Applies to labels within the forms */
 .form-label {
-    display: block; /* Displays the label as a block element, making it full-width */
+    display: block; /* Displays the label as a block element */
     margin-bottom: 5px; /* Adds space below each label */
-    color: #555; /* Sets the label text color to a medium grey */
+    color: #555; /* Medium grey for label text */
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* Form Input Styles - Applies to all input fields within the forms */
 .form-input {
-    width: 100%; /* Makes the input field full-width */
+    width: 100%; /* Full-width input field */
     padding: 10px; /* Adds padding inside the input field */
     margin-bottom: 15px; /* Adds space below each input field */
-    border: 1px solid #ccc; /* Adds a light grey border around the input field */
-    border-radius: 4px; /* Rounds the corners of the input field */
-    box-sizing: border-box; /* Ensures padding and border are included in the element's width and height */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Ensures padding and border are included in width and height */
     font-size: 14px; /* Sets the font size inside the input field */
 }
 
 /* Form Button Styles - Applies to all buttons within the forms */
 .form-button {
-    width: 100%; /* Makes the button full-width */
-    background-color: #7f7a61; /* Sets the button background color to blue */
-    color: whitesmoke; /* Sets the button text color to white */
+    width: 100%; /* Full-width button */
+    background-color: #ff6b81; /* Soft pink background color */
+    color: white; /* White text color */
     padding: 10px; /* Adds padding inside the button */
-    border: none; /* Removes any default border */
+    border: none; /* Removes default border */
     border-radius: 4px; /* Rounds the corners of the button */
-    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
     font-size: 16px; /* Sets the font size inside the button */
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Form Button Hover Effect - Changes the button color when hovered */
 .form-button:hover {
-    background-color: #4a483b; /* Changes the background color to a darker blue on hover */
-    color: aqua;
+    background-color: #ff5b6e; /* Darker pink on hover */
+    color: white; /* Keeps the text white */
 }
 
 /* Form Switch Link Styles - Applies to the links that switch between registration and login forms */
@@ -60,14 +63,14 @@
     text-align: center; /* Centers the link text */
     margin-top: 10px; /* Adds space above the link */
     font-size: 14px; /* Sets the font size of the link text */
-    color: #4a483b; /* Sets the link text color to blue */
-    cursor: pointer; /* Changes the cursor to a pointer when hovering over the link */
+    color: #ff6b81; /* Soft pink for the link text */
+    cursor: pointer; /* Pointer cursor on hover */
 }
 
 /* Form Switch Link Hover Effect - Adds an underline to the link when hovered */
 .form-switch-link:hover {
     text-decoration: underline; /* Underlines the link text on hover */
-    color: rgb(21, 54, 54);
+    color: #ff5b6e; /* Darker pink on hover */
 }
 
 /* Hidden Class - Used to hide elements (e.g., the login form when the registration form is shown) */
@@ -75,16 +78,16 @@
     display: none; /* Hides the element from view */
 }
 
-/* ############################################## */
-/* ResetPassword */
+/* Reset Password Link Styles */
 .form-reset-link {
     display: block;
     margin-top: 10px;
-    color: #007bff;
+    color: #ff6b81; /* Soft pink for reset password link */
     cursor: pointer;
     text-align: center;
-  }
+}
 
-  .form-reset-link:hover {
+.form-reset-link:hover {
     text-decoration: underline;
-  }
+    color: #ff5b6e; /* Darker pink on hover */
+}

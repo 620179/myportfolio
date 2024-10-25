@@ -1,37 +1,60 @@
-/* Flexbox Container Styles - Styles for the .flexbox-container that holds the flexbox items */
+/* Flexbox Container Styles */
 .flexbox-container {
     display: flex; /* Applies flexbox layout */
     justify-content: center; /* Centers the flexbox items horizontally */
     align-items: flex-start; /* Aligns items at the start of the container to maintain consistent height */
-    gap: 10px; /* Adds a gap between flexbox items */
+    gap: 20px; /* Adds a larger gap between flexbox items for spacing */
     padding: 20px; /* Adds padding inside the flexbox container */
-    background-color: rgb(68, 95, 125); /* Sets the background color of the flexbox container to yellow */
+    background-color: #f2f2f2; /* Light grey background to match the theme */
     position: relative; /* Allows for absolute positioning of pseudo-elements or child elements */
 }
 
-/* Flexbox Item Styles - Applies to each flexbox item inside the flexbox container */
+/* Flexbox Item Styles */
 .flexbox-item {
-    width: 200px; /* Sets the width of each flexbox item */
+    width: 220px; /* Sets the width of each flexbox item */
     margin: 10px; /* Adds margin around each flexbox item */
-    /* border: 3px solid #333; */
-    /* background-color: #dfdfdf; */
-    color: black; /* Sets the text color inside each flexbox item */
+    background-color: #fff; /* White background for the flexbox items */
+    color: #333; /* Dark grey text color inside each flexbox item */
+    border: 2px solid #ff6b81; /* Soft pink border around each flexbox item */
+    border-radius: 8px; /* Soft corners for each flexbox item */
     min-height: 150px; /* Ensures a minimum height for consistency among flexbox items */
     display: flex; /* Applies flexbox layout to the item itself */
     justify-content: center; /* Centers content horizontally within each flexbox item */
     align-items: center; /* Centers content vertically within each flexbox item */
     text-align: center; /* Centers the text within each flexbox item */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
 }
 
+/* Flexbox Image Styles - Ensures all images are the same size */
 .flexbox-image {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%; /* Ensure images take up the full width of their container */
+    height: 150px; /* Set a fixed height for all images */
     object-fit: cover; /* Ensures the image covers the box without distortion */
+    border-radius: 8px; /* Matches the border-radius of the container */
 }
 
-/* Hover Effects - Applied when hovering over flexbox items and buttons */
+/* Hover Effects */
 .flexbox-item:hover,
 button:hover {
-    filter: opacity(1); /* Ensures full opacity on hover */
+    filter: brightness(1.05); /* Slightly brightens the item or button on hover */
     transform: scale(1.05); /* Slightly enlarges the item or button on hover */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Darkens the shadow for a lifted effect on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .flexbox-container {
+        flex-direction: column; /* Stack flexbox items vertically on smaller screens */
+        align-items: center;
+    }
+
+    .flexbox-item {
+        width: 100%; /* Make each item take full width on smaller screens */
+        max-width: 300px;
+    }
+
+    .flexbox-image {
+        height: 200px; /* Adjust height for smaller screens if needed */
+    }
 }

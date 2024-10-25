@@ -3,17 +3,18 @@
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f2f2f2; /* Light grey background */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Title style */
-.contact-title {
-    color: #333;
+.homePageTitle {
+    color: #ff6b81; /* Soft pink color */
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif; /* Clean, modern font */
 }
 
 /* Contact content layout */
@@ -22,30 +23,41 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
 }
 
 /* Image container style */
 .contact-image {
     flex: 1;
     padding-right: 20px;
+    text-align: center; /* Center the image for better responsiveness */
 }
 
 .contact-img {
     width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px; /* Max width for better responsiveness */
+    border-radius: 50%; /* Rounded image */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Softer shadow */
+    border: 4px solid #ff6b81; /* Pink border around the image */
 }
 
 /* Text container style */
 .contact-text {
-    flex: 1;
+    flex: 2;
     font-size: 1.1rem;
-    color: #666;
+    color: #555555; /* Darker grey text */
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 20px;
+    text-align: left;
 }
 
 /* Form container */
 .contact-form-container {
     margin-top: 20px;
+    background-color: #ffffff; /* White background for form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 /* Form styles */
@@ -60,19 +72,55 @@
 
 .form-label {
     font-size: 1rem;
-    color: #555;
+    color: #333;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .form-input {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     font-size: 1rem;
-    border: 1px solid #ccc;
+    border: 2px solid #ff6b81; /* Pink border */
     border-radius: 4px;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
 }
 
 textarea.form-input {
     resize: vertical;
+}
+
+.form-input:focus {
+    border-color: #555; /* Darker focus state */
+    outline: none;
+}
+
+/* Submit button */
+.form-button {
+    background-color: #ff6b81; /* Soft pink button */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #ff5b6e; /* Darker pink on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-image {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
 }

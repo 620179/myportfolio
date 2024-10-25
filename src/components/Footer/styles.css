@@ -1,37 +1,42 @@
 .footer-container {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .footer-content p {
-    margin: 0;
-    font-size: 1rem;
-  }
-  
-  .social-media-links {
-    margin-top: 10px;
-  }
-  
-  .social-media-links a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 1.2rem;
-  }
-  
-  .social-media-links a:hover {
-    text-decoration: underline;
-  }
-  
+  background-color: #f2f2f2; /* Light grey background */
+  color: #333; /* Dark grey text */
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow at the top */
+  font-family: 'Poppins', sans-serif; /* Consistent font */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 1rem;
+  color: #666; /* Softer grey for text */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.social-media-links {
+  margin-top: 10px;
+}
+
+.social-media-links a {
+  color: #ff6b81; /* Soft pink for social media icons/links */
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1.4rem; /* Slightly larger icons for better visibility */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.social-media-links a:hover {
+  color: #ff5b6e; /* Darker pink on hover */
+  text-decoration: underline; /* Underline on hover for emphasis */
+}

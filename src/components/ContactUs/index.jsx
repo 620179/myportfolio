@@ -7,12 +7,10 @@ export default () => {
     <>
         
         <div className="contact-container">
-          <h1 className="homePageTitle"> Contact US </h1>
+          <h1 className="homePageTitle"> Contact Me </h1>
 
           <div className="contact-content">
-            <div className="contact-image">
-              <img src="/img/1.jpg" alt="Contact Us" className="contact-img" />
-            </div>
+            
             <div className="contact-text">
               <p>
                 If you have any questions, feel free to reach out to us. We are here

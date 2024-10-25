@@ -3,17 +3,17 @@
     display: flex;
     justify-content: center; /* Centers the buttons horizontally */
     align-items: center; /* Centers the buttons vertically if there's a height */
-    gap: 10px; /* Adds space between the buttons */
+    gap: 15px; /* Adds space between the buttons */
     margin: 20px 0; /* Adds margin above and below the button container */
 }
 
 /* Button Styles */
 .button-container .btn {
-    background-color: #7f7a61; /* Blue background color */
-    color: #dfdfdf; /* White text color */
-    padding: 10px 20px; /* Adds padding inside the button */
+    background-color: #ff6b81; /* Soft pink background color */
+    color: white; /* White text color for contrast */
+    padding: 12px 24px; /* Adds padding inside the button */
     border: none; /* Removes the default border */
-    border-radius: 5px; /* Rounds the corners of the buttons */
+    border-radius: 8px; /* Rounds the corners of the buttons */
     cursor: pointer; /* Changes cursor to pointer on hover */
     font-size: 16px; /* Sets a consistent font size */
     transition: background-color 0.3s ease, transform 0.2s ease; /* Adds smooth transition for hover effects */
@@ -21,9 +21,10 @@
 
 /* Hover Effect for Buttons */
 .button-container .btn:hover {
-    background-color: #4a483b; /* Darker blue on hover */
-    color: aqua;;
+    background-color: #ff5b6e; /* Darker pink on hover */
+    color: white; /* Keeps the text white on hover */
     transform: scale(1.05); /* Slightly increases the size of the button on hover */
 }
+
 
 
